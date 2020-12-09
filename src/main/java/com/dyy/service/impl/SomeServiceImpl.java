@@ -9,6 +9,6 @@ import com.dyy.service.SomeService;
 public class SomeServiceImpl implements SomeService {
     @Override
     public void dosome() {
-        System.out.println("执行了");
+        System.out.println("执行了dosome方法");
     }
 }

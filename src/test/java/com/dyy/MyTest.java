@@ -12,8 +12,12 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class MyTest {
     @Test
     public void test01(){
-        //使用spring容器的对象
-        //1.读取spring配置文件,并创建容器，其中ClassPathXmlApplicationContext表示从类路径中加载配置文件
+
+
+        /*
+            1.读取spring配置文件,并创建容器，其中ClassPathXmlApplicationContext表示从类路径中加载配置文件，
+            读取配置文件的过程中，spring会创建配置文件中所有的对象，并将创建的对象放入spring容器中
+        */
         String config = "test01.xml";
         ApplicationContext applicationContext = new ClassPathXmlApplicationContext(config);
         //2.从容器中获取某个对象
